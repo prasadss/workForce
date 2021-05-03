@@ -1,0 +1,25 @@
+{
+  "name": "workforce-backend",
+  "version": "1.0.0",
+  "description": "Endpoints",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "pre:dev": "docker-compose up -d",
+    "dev": "nodemon --inspect=9229 app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "helmet": "^4.5.0",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
